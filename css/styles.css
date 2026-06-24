@@ -18,7 +18,7 @@
   --spacing: 0.25rem;
   --font-family-Days-One: "Days One";
   --primary-color: #cbfe1c;
-  --primary-color-rgba: rgba(203, 254, 28);
+  --primary-color-rgba: 203, 254, 28;
   --dark-color-secondary: #0b0e13;
   --color-gray-300: oklch(87.2% 0.01 258.338);
   --color-gray-400: oklch(70.7% 0.022 261.325);
@@ -140,7 +140,7 @@ h6 {
   color: var(--color-light);
 }
 .text-primary {
-  --bs-primary-rgb: 203, 254, 28;
+  --bs-primary-rgb: var(--primary-color-rgba);
 }
 
 
