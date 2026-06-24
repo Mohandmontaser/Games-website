@@ -16,7 +16,7 @@
 
 :root {
   --spacing: 0.25rem;
-
+  --font-family-Days-One: "Days One";
   --primary-color: #cbfe1c;
   --primary-color-rgba: rgba(203, 254, 28);
   --dark-color-secondary: #0b0e13;
@@ -34,8 +34,8 @@
 }
 
 body {
-  font-family: "Chakra Petch", sans-serif;
-  color: var(--color-light);
+  --bs-body-font-family: "Chakra Petch", sans-serif;
+  --bs-body-color: var(--color-light);
 }
 
 h1,
@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Days One";
+  font-family: var(--font-family-Days-One);
   font-weight: 700;
 }
 
@@ -403,7 +403,6 @@ h6 {
   padding-block: 6rem;
 
   .overlay {
-    /* position: absolute; */
     inset: 0;
     background: linear-gradient(
       to top,
@@ -459,12 +458,11 @@ h6 {
 
   .Next-Previous {
     transition: all 0.2s;
-    span {
-      &:hover {
+
+    &:hover {
+      span {
         color: var(--primary-color);
       }
-    }
-    &:hover {
       border-color: var(--primary-color);
     }
   }
@@ -719,7 +717,6 @@ textarea:focus {
   --bs-body-color: var(--bs-body-color);
   --bs-body-bg: var(--color-gray-700);
   border-color: var(--primary-color);
-
   outline: 0;
   box-shadow: 0 0 0 0.125rem var(--primary-color);
 }
@@ -727,7 +724,6 @@ textarea:focus {
 input::placeholder,
 textarea::placeholder {
   font-size: 1rem;
-
   color: var(--color-gray-300) !important;
 }
 /* ===== END: Contact Section ===== */
