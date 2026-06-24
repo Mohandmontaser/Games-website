@@ -143,9 +143,6 @@ h6 {
   --bs-primary-rgb: 203, 254, 28;
 }
 
-.text-color-primary {
-  color: var(--primary-color);
-}
 
 .text-gray-400 {
   color: var(--color-gray-400);
