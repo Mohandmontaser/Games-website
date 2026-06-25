@@ -726,10 +726,9 @@ textarea::placeholder {
 /* ===== END: Contact Section ===== */
 
 /* ===== START: Footer ===== */
+
 .footer {
   padding-block: 4rem;
-}
-.footer {
   transition: all 0.3s;
   a {
     &:hover {
