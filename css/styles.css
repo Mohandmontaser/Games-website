@@ -647,13 +647,13 @@ h6 {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
 }
 
 @keyframes scroll-right {
   0% {
-    transform: translateX(-50%);
+    transform: translateX(-40%);
   }
   100% {
     transform: translateX(0);
